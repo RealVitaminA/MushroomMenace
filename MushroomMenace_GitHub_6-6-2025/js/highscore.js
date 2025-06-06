@@ -110,3 +110,8 @@ class HighScoreManager {
 
 // Create global high score manager instance
 const highScoreManager = new HighScoreManager();
+
+// Export for Node.js testing environments
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { HighScoreManager };
+}
